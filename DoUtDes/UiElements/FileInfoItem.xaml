@@ -1,0 +1,22 @@
+﻿<StackPanel x:Class="DoUtDes.UiElements.FileInfoItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="81" d:DesignWidth="480" Name="dis">
+    
+    <Grid x:Name="LayoutRoot" Height="80" >
+        <TextBlock Margin="12,12,12,41" Width="Auto" Foreground="Aqua" >
+            <TextBlock.Text>
+                <Binding ElementName="dis" Path="Title" />
+            </TextBlock.Text>
+        </TextBlock>
+        <TextBlock Text="Size: " Margin="12,45,377,12" FontSize="12"  Foreground="Aqua"/>
+        <TextBlock FontSize="10" Margin="47,45,404,12" Foreground="Aqua" DataContext="{Binding ElementName=dis, Path=Height}">
+            <TextBlock.Text>
+                <Binding ElementName="dis" Path="FileSize" />
+            </TextBlock.Text>
+        </TextBlock>
+    </Grid>
+</StackPanel>
