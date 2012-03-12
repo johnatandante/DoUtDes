@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="DoUtDes.AccountsView.StorageAccountView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="101" d:DesignWidth="555">
+    
+    <Grid x:Name="LayoutRoot">
+        <StackPanel Width="Auto" Height="Auto" Orientation="Horizontal">
+            <Image Source="{Binding AvatarIconUri}" MaxHeight="54" MinWidth="48" MinHeight="48" Height="Auto"/>
+            <StackPanel Width="Auto" Height="Auto" MinHeight="52">
+                <TextBlock Text="{Binding Email}" MinHeight="36" MinWidth="54" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                <TextBlock Text="{Binding UniqueId}" MinHeight="24" MinWidth="54" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                <TextBlock Text="{Binding Account}" MinHeight="24" MinWidth="54" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

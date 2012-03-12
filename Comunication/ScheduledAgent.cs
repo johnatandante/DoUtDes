@@ -21,6 +21,10 @@ namespace Comunication
                     Application.Current.UnhandledException += ScheduledAgent_UnhandledException;
                 });
             }
+
+            // Usa Reminder per i timer
+            // I scheduled tastk possono essere avviati uno ogni mezzora
+            // 
         }
 
         /// Code to execute on Unhandled Exceptions
